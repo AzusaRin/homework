@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>回到顶部</title>
+  <style>
+.toTop{
+  position: fixed;
+      right: 10px;
+      bottom: 50px;
+      font-size: 14px;
+      padding: 10px;
+      background: #fff;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+      outline: none;
+      border: 0px;
+      border-radius: 10px;  
+      display: none; 
+}
+.show{
+  display: block;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>1</h2>
+    <h2>2</h2>
+    <h2>3</h2>
+    <h2>4</h2>
+    <h2>5</h2>
+    <h2>6</h2>
+    <h2>7</h2>
+    <h2>8</h2>
+    <h2>9</h2>
+    <h2>10</h2>
+    <h2>11</h2>
+    <h2>12</h2>
+    <h2>13</h2>
+    <h2>14</h2>
+    <h2>15</h2>
+    <h2>16</h2>
+    <h2>17</h2>
+    <h2>18</h2>
+    <h2>19</h2>
+    <h2>20</h2>
+    <h2>1</h2>
+    <h2>2</h2>
+    <h2>3</h2>
+    <h2>4</h2>
+    <h2>5</h2>
+    <h2>6</h2>
+    <h2>7</h2>
+    <h2>8</h2>
+    <h2>9</h2>
+    <h2>10</h2>
+    <h2>11</h2>
+    <h2>12</h2>
+    <h2>13</h2>
+    <h2>14</h2>
+    <h2>15</h2>
+    <h2>16</h2>
+    <h2>17</h2>
+    <h2>18</h2>
+    <h2>19</h2>
+    <h2>20</h2>
+    <button class="toTop">回到顶部</button>
+  </div>
+  
+  <script> 
+  let $toTop = document.querySelector('.toTop')
+  document.onscroll = function(){
+    if(window.scrollY > 120 ){
+      $toTop.classList.add('show')
+    }else{
+      $toTop.classList.remove('show')
+    }
+  }
+
+  $toTop.onclick = function(e){
+    window.scrollTo({top,behavior:"smooth"})
+  }
+
+  </script>
+</body>
+</html>
